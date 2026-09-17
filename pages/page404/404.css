@@ -1,0 +1,18 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12.5px;
+    line-height: 1.7;
+}
+
+.not-found-code {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 1;
+}
+
+.not-found a {
+    text-decoration: underline;
+}

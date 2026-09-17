@@ -1,0 +1,27 @@
+.education-list {
+    --list-gap: 14px;
+}
+
+.edu-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 14px;
+}
+
+.edu-info {
+    flex: 1;
+    min-width: min(260px, 100%);
+}
+
+.edu-title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+
+.edu-desc {
+    margin-top: 6px;
+    font-size: 12.5px;
+    line-height: 1.7;
+}

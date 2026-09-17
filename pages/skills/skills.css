@@ -1,0 +1,137 @@
+.skills-main {
+    flex: 1;
+    min-width: min(320px, 100%);
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 12.5px;
+}
+
+.skill-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-grade {
+    opacity: .6;
+}
+
+/* Уровень задаётся на пункте списка: style="--level: 82%" */
+.skill-bar {
+    height: 8px;
+    margin-top: 4px;
+    border: var(--border-muted);
+}
+
+.skill-bar::before {
+    content: '';
+    display: block;
+    width: var(--level, 0%);
+    height: 100%;
+    background: var(--fg);
+}
+
+.skills-side {
+    flex: 1;
+    min-width: min(300px, 100%);
+}
+
+.skills-side .tags {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.languages {
+    font-size: 12.5px;
+    line-height: 1.65;
+}
+
+.language-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.language-level {
+    padding: 0 6px;
+    letter-spacing: 0;
+}
+
+.language-note {
+    margin-top: 6px;
+    opacity: .7;
+}
+
+.skills-panel {
+  flex: 1;
+  min-width: min(320px, 100%);
+  border: 1px solid #b8b5ab;
+  background: #0b0b0a;
+  color: #e8e6df;
+  font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.skills-panel-title {
+  padding: 5px 10px;
+  border-bottom: 1px solid #b8b5ab;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.skills-grid {
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(98px, 1fr));
+  gap: 10px;
+}
+
+.skill {
+  border: 1px solid #6a6862;
+  padding: 11px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: background .15s;
+}
+
+.skill:hover {
+  background: rgba(232, 230, 223, .08);
+}
+
+.skill-icon {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #b8b5ab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.skill-icon.react {
+  font-size: 40px;
+}
+
+.skill-icon--text {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  line-height: normal;
+}
+
+.skill-icon--bold {
+  font-weight: 600;
+  line-height: normal;
+}
+
+.skill-name {
+  font-size: 10px;
+  letter-spacing: 1.1px;
+  text-align: center;
+  line-height: 1.3;
+}

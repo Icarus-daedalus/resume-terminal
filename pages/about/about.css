@@ -1,0 +1,31 @@
+.about-text {
+    flex: 1;
+    min-width: min(340px, 100%);
+}
+
+.about-paragraphs {
+    --list-gap: 14px;
+    font-size: 13px;
+    line-height: 1.7;
+    text-wrap: pretty;
+}
+
+.about-side {
+    flex: 1 1 288px;
+    min-width: min(288px, 100%);
+}
+
+.principles {
+    --list-gap: 9px;
+    font-size: 12.5px;
+    line-height: 1.6;
+}
+
+.principles li::before {
+    content: '▪ ';
+}
+
+.looking-for {
+    font-size: 12.5px;
+    line-height: 1.7;
+}

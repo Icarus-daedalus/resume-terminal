@@ -1,0 +1,18 @@
+.achievement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.achievement-text {
+    padding-top: 10px;
+    border-top: var(--border-dashed);
+    font-size: 12.5px;
+    line-height: 1.75;
+}
+
+.achievement-list {
+    gap: 5px;
+    font-size: 12.5px;
+    line-height: 1.75;
+}

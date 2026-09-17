@@ -1,0 +1,221 @@
+.user-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.photo img{
+    width: 216px;
+    flex: none;
+    box-sizing: border-box;
+    align-items: flex-end;
+    justify-content: center;
+    border: var(--border);
+}
+
+.photo-label {
+    padding: 3px 6px;
+    border: var(--border-muted);
+    background: var(--bg-screen);
+    font-size: 9.5px;
+    letter-spacing: 1.2px;
+    opacity: .85;
+}
+
+.user-info {
+    flex: 1;
+    min-width: min(240px, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-name {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1.1;
+}
+
+.user-info .kv {
+    font-size: 12.5px;
+    line-height: 1.5;
+}
+
+.quote {
+    padding: 8px 10px;
+    border: var(--border-muted);
+    font-size: 12.5px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.user-details {
+    padding-top: 2px;
+    border-top: var(--border-dashed);
+}
+
+.stats {
+    flex: 1 1 216px;
+    min-width: min(216px, 100%);
+    align-self: flex-start;
+}
+
+.stats-list {
+    font-size: 12px;
+    line-height: 2.05;
+}
+
+.stats-list div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-list dt {
+    opacity: .7;
+}
+
+.stats-list dd {
+    font-weight: 600;
+}
+
+.event-log {
+    flex: 1;
+    min-width: min(320px, 100%);
+}
+
+.event-list {
+    font-size: 12.5px;
+    line-height: 1.55;
+}
+
+.event-date {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    opacity: .6;
+}
+
+.channels {
+    flex: 1 1 300px;
+    min-width: min(300px, 100%);
+}
+
+.channel-list {
+    --list-gap: 9px;
+    font-size: 12.5px;
+}
+
+.channel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.channel-icon {
+    width: 26px;
+    height: 26px;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-muted);
+    font-size: 11px;
+}
+
+.channel-info {
+    flex: 1;
+}
+
+.channel-note {
+    display: block;
+    font-size: 11px;
+    opacity: .6;
+}
+
+.channel-badge {
+    padding: 1px 4px;
+    font-weight: 400;
+}
+
+.contacts {
+    flex: 1;
+    min-width: min(320px, 100%);
+}
+
+.contact-list {
+    gap: 10px 16px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.message {
+    flex: 1 1 320px;
+    min-width: min(320px, 100%);
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.field-label {
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    opacity: .65;
+}
+
+.field {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 8px 10px;
+    border: var(--border-muted);
+    border-radius: 0;
+    background: transparent;
+    color: var(--fg);
+    font: inherit;
+    font-size: 12.5px;
+    line-height: 1.6;
+}
+
+.field::placeholder {
+    color: var(--fg);
+    opacity: .55;
+}
+
+.field:focus {
+    outline: none;
+    border-color: var(--fg);
+}
+
+.field--area {
+    min-height: 98px;
+    resize: vertical;
+}
+
+.btn {
+    padding: 8px;
+    border: 1px solid var(--fg);
+    border-radius: 0;
+    background: var(--fg);
+    color: var(--bg-screen);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+.btn:hover {
+    background: var(--bg-screen);
+    color: var(--fg);
+}
+
+.form-note {
+    font-size: 11px;
+    line-height: 1.6;
+    opacity: .6;
+}

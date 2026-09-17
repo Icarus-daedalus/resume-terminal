@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ян Скорый — Frontend-разработчик</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="frame">
+        <div class="bezel">
+            <div class="screen">
+                <div class="terminal">
+                    <header>
+                        <div class="info">
+                            <span class="brand">SKORYY.NET</span>
+                            <span class="version">[ver. 1.0.26]</span>
+                            <span class="subtitle wide-only">— Личный терминал frontend-разработчика</span>
+                        </div>
+                        <div class="date-time" title="Московское время">
+                            <span id="date" class="wide-only"></span>
+                            <span id="time"></span>
+                        </div>
+                    </header>
+
+                    <div class="layout">
+                        <aside class="sidebar">
+                            <div class="sidebar-profile">
+                                <div class="avatar" aria-hidden="true">Я</div>
+                                <div class="sidebar-person">
+                                    <div class="sidebar-name"><span class="narrow-only">ЯН </span>СКОРЫЙ</div>
+                                    <div class="sidebar-role narrow-only">Frontend-разработчик · 18 лет</div>
+                                </div>
+                                <span class="badge badge--sm narrow-only">ОТКРЫТ</span>
+                            </div>
+
+                            <nav class="main-nav">
+                                <a href="#/"><span class="nav-icon" aria-hidden="true">▣</span><span class="nav-label">ПРОФИЛЬ</span></a>
+                                <a href="#/about"><span class="nav-icon" aria-hidden="true">●</span><span class="nav-label">ОБО МНЕ</span></a>
+                                <a href="#/experience"><span class="nav-icon" aria-hidden="true">▤</span><span class="nav-label">ОПЫТ (7+)</span></a>
+                                <a href="#/projects"><span class="nav-icon" aria-hidden="true">◆</span><span class="nav-label">ПРОЕКТЫ (1)</span></a>
+                                <a href="#/skills"><span class="nav-icon" aria-hidden="true">▥</span><span class="nav-label">НАВЫКИ</span></a>
+                                <a href="#/achievements"><span class="nav-icon" aria-hidden="true">★</span><span class="nav-label">ДОСТИЖЕНИЯ</span></a>
+                                <a href="#/education"><span class="nav-icon" aria-hidden="true">▦</span><span class="nav-label">ОБРАЗОВАНИЕ</span></a>
+                            </nav>
+
+                            <div class="sidebar-footer wide-only">СЕАНС АКТИВЕН</div>
+                        </aside>
+
+                        <main id="main"></main>
+                    </div>
+
+                    <section class="sys-msg">
+                        <div class="sys-msg-box">
+                            <h2 class="sys-msg-title">СИСТЕМНОЕ СООБЩЕНИЕ</h2>
+                            <p id="sys-msg" class="sys-msg-text"></p>
+                        </div>
+                    </section>
+
+                    <footer class="status-bar">
+                        <span>СОЕДИНЕНИЕ УСТАНОВЛЕНО</span>
+                        <span class="status-section">РАЗДЕЛ: <span id="section-label"></span></span>
+                        <span class="status-hint wide-only">↑ ↓ — НАВИГАЦИЯ</span>
+                        <span class="status-hint narrow-only">СВАЙП ТАБОВ ⇄</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/router.js"></script>
+</body>
+</html>

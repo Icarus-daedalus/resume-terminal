@@ -1,0 +1,23 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.job-item {
+    border: var(--border-muted);
+}
+
+.job-item-title {
+    padding: 5px 10px;
+    border-bottom: var(--border-dashed);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+}
+
+.job-item-body {
+    padding: 12px;
+    font-size: 12.5px;
+    line-height: 1.75;
+}

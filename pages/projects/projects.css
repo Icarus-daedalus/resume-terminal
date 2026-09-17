@@ -1,0 +1,37 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.project-stack {
+    font-size: 11px;
+    letter-spacing: 1.2px;
+}
+
+.project-stack .tag {
+    padding: 3px 8px;
+}
+
+.project-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 12px;
+    border-top: var(--border-dashed);
+    font-size: 12.5px;
+    line-height: 1.75;
+}
+
+.project-note {
+    opacity: .75;
+}
+
+.project-results {
+    align-items: stretch;
+}
+
+.project-results .callout {
+    flex: 1;
+    min-width: min(260px, 100%);
+}
